@@ -31,14 +31,16 @@
 }
 /* NAV ROUTE AND CHILDREN */
 .nav-container .routes {
-    justify-content: center;
+    justify-content: center;  
 }
 
 .nav-container .routes ul{ 
     display: flex;
+    justify-content: space-between;
     list-style: none;
     text-decoration: none;
     padding: 0;
+    width: 50%;
 }
 
 .nav-container .routes ul li {
@@ -117,12 +119,12 @@
     font-size: 14px;
     color: #79828b;
     text-decoration: none solid rgb(121, 130, 139);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 .activity .activity-body .user-info .pay-out{
     display: flex;
     align-items: center;
-    width: 150px;
+    width: 140px;
     justify-content: space-between;
 }
 .activity .activity-body .user-info .pay-out .price-paid {
