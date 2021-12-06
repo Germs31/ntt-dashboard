@@ -15,7 +15,7 @@ const Navigation = () => {
                 </ul>
             </div>
             <div className="hamburger">
-                <Menu />
+                <Menu className="hamburger-icon"/>
             </div>
         </div>
     )

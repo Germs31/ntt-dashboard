@@ -2,6 +2,11 @@ import React from 'react'
 import Chip from './Chip'
 import Message from './Message'
 const MessageBlock = ({user}) => {
+    const reverseArray = () => {
+        let arr = user.crypto
+        let reversedArr = [...arr].reverse();
+        return reversedArr
+    }
     return (
         <div className="message-block">
             <div className="message-header">
@@ -28,7 +33,7 @@ const MessageBlock = ({user}) => {
 
             <div className="pay-out">
                 {
-                    user.crypto.reverse().map((c,i) => {
+                    reverseArray().map((c,i) => {
                         return (
                             <div key={i} className="chip-container">
                                 <Chip value={c} />

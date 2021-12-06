@@ -50,13 +50,15 @@
 
 .nav-container .hamburger {
     justify-content: flex-end;
+}
+.nav-container .hamburger .hamburger-icon {
     cursor: pointer;
 }
 /* APP BODY */
 .app-body {
     display: flex;
     justify-content: center;
-    height: 91.8%;
+    height: 80%;
     margin-top: 51px;
 }
 
