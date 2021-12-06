@@ -52,3 +52,58 @@
     justify-content: flex-end;
     cursor: pointer;
 }
+/* APP BODY */
+.app-body {
+    display: flex;
+    justify-content: center;
+    height: 91.8%;
+    margin-top: 51px;
+}
+
+/* ACTIVITIES AND CHILDREN */
+.app-body .activities-container {
+    height: 469px;
+    width: 746px;
+}
+
+.app-body .activities-container .activities {
+    background: #fff;
+    height: 421px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.06);
+}
+.app-body .activities-container .activities .activity-header {
+    padding: 20px 0 5px 20px;
+}
+.app-body .activities-container .activities .activity-header span {
+    font-size: 18px;
+    color: #79828b;
+    text-decoration: none solid rgb(121, 130, 139);
+    line-height: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+/* CONTAINER HEADER */
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.container-header .title {
+    font-size: 20px;
+    color: #42505C;
+    text-decoration: none solid rgb(66, 80, 92);
+    letter-spacing: 0.25px;
+}
+.container-header .action {
+    font-size: 14px;
+    color: #0091EF;
+    text-decoration: none solid rgb(0, 145, 239);
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+}
+
