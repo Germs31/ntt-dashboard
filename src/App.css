@@ -83,6 +83,58 @@
     letter-spacing: 1.5px;
 }
 
+/* ACTIVITY BLOCK */
+.activity {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e6ebf0;
+}
+.activity:last-of-type {
+    border-bottom: none;
+}
+.activity .activity-body {
+    display: flex;
+}
+.activity .activity-body .profile-img {
+    margin-right: 20px;
+}
+.activity .activity-body .profile-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.activity .activity-body .user-info .name{
+    font-size: 16px;
+    color: #42505c;
+    text-decoration: none solid rgb(66, 80, 92);
+    margin-bottom: 8px;
+}
+.activity .activity-body .user-info .submsg{
+    font-size: 14px;
+    color: #79828b;
+    text-decoration: none solid rgb(121, 130, 139);
+    margin-bottom: 8px;
+}
+.activity .activity-body .user-info .pay-out{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+}
+.activity .activity-body .user-info .pay-out .price-paid {
+    color: #42505c;
+}
+.activity .activity-body .user-info .pay-out .price-paid .currency-symbol{
+    color: #79828B;
+}
+
+.activity .last-active {
+    font-size: 12px;
+    color: #79828b;
+    text-decoration: none solid rgb(121, 130, 139);
+}
 
 /* CONTAINER HEADER */
 .container-header{

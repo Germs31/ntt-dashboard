@@ -3,6 +3,7 @@ import {clients} from './data'
 import {useEffect, useState} from 'react'
 import Navigation from './Components/Navigation'
 import ContainerHeader from './Components/ContainerHeader'
+import Activity from './Components/Activity'
 function App() {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState(clients[2])
@@ -28,6 +29,20 @@ function App() {
             <div className="activity-header">
               <span>Recent</span>
             </div>
+
+            { users.map((user, index) => {
+              return (
+                <Activity
+                  key={index}
+                  name={user.fullName}
+                  img={user.profileImg}
+                  active={user.active}
+                  subMsg={user.subMessage}
+                  paid={user.pricePaid}
+                  crypto={user.crypto}
+                  imgBgColor={user.imgBgColor} />
+              )
+            })}
 
           </div>
         </div>
