@@ -1,1 +1,54 @@
 
+.App {
+    height: 100vh;
+}
+  
+/* NAVIGATION CONTAINER */
+.nav-container {
+    height: 80px;
+    padding: 0 20px;
+    background: #0091ef;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+/* GROUPED STYLES */
+.nav-container .logo,.routes,.hamburger {
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+}
+
+/* NAV LOGO STYLE AND CHILDREN */
+.nav-container .logo {
+    justify-content: flex-start;
+    font-size: 20px;
+}
+.nav-container .logo .logo-icon {
+    padding-right: 10px;
+}
+/* NAV ROUTE AND CHILDREN */
+.nav-container .routes {
+    justify-content: center;
+}
+
+.nav-container .routes ul{ 
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.nav-container .routes ul li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* NAV HAMBURGER */
+
+.nav-container .hamburger {
+    justify-content: flex-end;
+    cursor: pointer;
+}
