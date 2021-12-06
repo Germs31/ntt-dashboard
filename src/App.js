@@ -4,6 +4,7 @@ import {useEffect, useState} from 'react'
 import Navigation from './Components/Navigation'
 import ContainerHeader from './Components/ContainerHeader'
 import Activity from './Components/Activity'
+import MessageBlock from './Components/MessageBlock'
 function App() {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState(clients[2])
@@ -50,7 +51,7 @@ function App() {
           <ContainerHeader title="Messages" action="View All"/>
 
           <div className="messages">
-
+            <MessageBlock user={currentUser} />
           </div>
         </div>
       </div>
