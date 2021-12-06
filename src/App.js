@@ -7,7 +7,7 @@ import Activity from './Components/Activity'
 import MessageBlock from './Components/MessageBlock'
 function App() {
   const [users, setUsers] = useState([])
-  const [currentUser, setCurrentUser] = useState(clients[2])
+  const [currentUser] = useState(clients[2])
   
   useEffect( () => {
     getUsers()
@@ -16,6 +16,7 @@ function App() {
   const getUsers = () => {
     setUsers(clients)
   }
+
 
   return (
     <div className="App">
